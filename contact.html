@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <title>Personal Website</title>
+</head>
+<title>Personal Website Design</title>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/icons8-home-50.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="#">Contact Me</a></li>
+                <li><a href="gallery.html">My Gallery</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>My Space</h1>
+    <p>Hey there! Welcome to my space. Feel free to explore this website for more content.</p>
+    <br>
+
+    <a href="" class="hero-btn">Visit here to know more</a>
+</div>
+
+</section>
+
+
+
+<!------------Contact Me------------ -->
+
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave a message.</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="./images/contactme.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">India</option>
+            <option value="canada">USA</option>
+            <option value="usa">Others</option>
+          </select>
+          <label for="subject">Message For Me</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!------Gallery-------->
+
+
+
+
+<!-- ------footer-------- -->
+
+<section class="footer">
+    <h4>Thanks</h4>
+    <p>"Have a nice day, week, month, year, deacde, Life ;)"</p>
+    <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> by Kushagra</p>
+
+</section>
+
+
+
+
+
+<!---------JavaScript for toggle menu---------->
+ <script>
+     
+     var navLinks = document.getElementById("navLinks")
+
+     function showMenu(){
+         navLinks.style.right = "0";
+     }
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+
+ </script>
+    
+</body>
+</html>

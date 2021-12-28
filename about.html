@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <title>Personal Website</title>
+</head>
+<title>Personal Website Design</title>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/icons8-home-50.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="gallery.html">My Gallery</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>My Space</h1>
+    <p>Hey there! Welcome to my space. Feel free to explore this website for more content.</p>
+    <br>
+
+    <a href="" class="hero-btn">Visit here to know more</a>
+</div>
+
+</section>
+
+<!--------About Me--------->
+<section class="about">
+    <h1>About Me</h1>
+    <p>Kushagra Singhal, an CS engineer.
+    Possesses escalator wit and elevator wisdom </p>
+
+    <div class="row">
+        <div class="about-col">
+            <!-- <img src="./images/dexter1.jpg"> -->
+            <div>
+            <h3>What do I do</h3>
+            <p>Graduated from Galgotias University in Btech CSE. I like working on various tech stacks</p>
+            </div>
+        </div>
+        <div class="about-col">
+            <h3>From 0 to 1</h3>
+            <p>Graduated from Galgotias University in Btech CSE. I like working on various tech stacks</p>
+        </div>
+        <div class="about-col">
+            <h3>With whom do I work</h3>
+            <p>Graduated from Galgotias University in Btech CSE. I like working on various tech stacks</p>
+        </div>
+        
+    </div>
+
+</section>
+
+
+<!-- ------footer-------- -->
+
+<section class="footer">
+    <h4>Thanks</h4>
+    <p>"Have a nice day, week, month, year, deacde, Life ;)"</p>
+    <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> by Kushagra</p>
+
+</section>
+
+
+
+
+
+<!---------JavaScript for toggle menu---------->
+ <script>
+     
+     var navLinks = document.getElementById("navLinks")
+
+     function showMenu(){
+         navLinks.style.right = "0";
+     }
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+
+ </script>
+    
+</body>
+</html>
