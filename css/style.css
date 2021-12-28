@@ -91,12 +91,18 @@ nav .fas{
 .active{
     background-color: #f44336;
 }
-
+.text-box p{
+    color: #f2f2f2;
+}
 
 @media(max-width:700px){
     .text-box h1{
         font-size: 20px;
     }
+
+    
+
+
     .nav-links ul li{
         display: block;
     }
@@ -122,13 +128,7 @@ nav .fas{
         padding: 30px;
     }
 }
-p{
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
+
 
 /* --------About Me-------- */
 
